@@ -1,0 +1,17 @@
+{
+	"name": "www",
+	"version": "0.0.1",
+	"description": "Branden Higby's personal site",
+	"author": "Branden Higby",
+	"license": "MIT",
+	"private": true,
+	"type": "module",
+	"scripts": {},
+	"devDependencies": {
+		"@eslint/js": "^9.9.1",
+		"eslint": "^9.9.1",
+		"eslint-config-prettier": "^9.1.0",
+		"globals": "^15.9.0",
+		"prettier": "^3.3.3"
+	}
+}
