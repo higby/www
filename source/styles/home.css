@@ -1,5 +1,5 @@
 .masthead {
 	.title {
-		visibility: hidden;
+		display: none;
 	}
 }

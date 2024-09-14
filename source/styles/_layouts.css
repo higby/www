@@ -1,5 +1,4 @@
 .masthead {
-	align-items: center;
 	gap: var(--gap) var(--gutters);
 	display: flex;
 	flex-wrap: wrap;
