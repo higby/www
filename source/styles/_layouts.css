@@ -1,13 +1,14 @@
 .masthead {
+	align-items: center;
 	gap: var(--gap) var(--gutters);
 	display: flex;
-	flex-wrap: wrap;
 	margin-block-end: 32px;
 	margin-inline: auto;
 	width: min(calc(100% - var(--gutters)), var(--site-max-width));
 	padding-block-start: 32px;
 
 	.title {
+		color: var(--accent);
 		font-size: var(--font-size-2);
 		font-weight: bold;
 	}
