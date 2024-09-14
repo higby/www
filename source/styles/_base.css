@@ -1,0 +1,192 @@
+html {
+	font-size: var(--font-size-root);
+}
+
+body {
+	background-color: var(--background);
+	color: var(--text);
+	font-family: var(--font-sans);
+	letter-spacing: 0.02em;
+	line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--text-emphasis);
+}
+
+h1 {
+	font-size: var(--font-size-1);
+}
+
+h2 {
+	font-size: var(--font-size-2);
+}
+
+h3,
+h4,
+h5,
+h6 {
+	font-size: var(--font-size-3);
+}
+
+ol,
+ul {
+	padding-inline-start: 40px;
+}
+
+blockquote {
+	display: grid;
+	gap: 16px;
+	grid-template-columns: auto 1fr;
+	margin-inline: unset;
+
+	> * {
+		grid-column: 2 / 3;
+	}
+
+	&::before {
+		content: open-quote;
+		font-size: 2em;
+		line-height: 1.25;
+	}
+
+	&::after {
+		content: close-quote;
+		opacity: 0;
+		position: absolute;
+	}
+}
+
+figure:has(> blockquote) {
+	grid-template-areas:
+		"punctuation quote"
+		"punctuation attribution";
+
+	&::before {
+		grid-area: punctuation;
+	}
+
+	blockquote {
+		grid-area: quote;
+	}
+
+	figcaption {
+		grid-area: attribution;
+	}
+}
+
+cite {
+	font-style: normal;
+}
+
+a {
+	color: var(--accent);
+	text-decoration-line: underline;
+	text-decoration-thickness: 0.1em;
+	text-underline-offset: 2px;
+	transition: color 0.15s;
+
+	&:hover {
+		text-decoration-line: none;
+	}
+}
+
+pre,
+code {
+	font-family: var(--font-mono);
+}
+
+pre,
+code:not(pre *) {
+	background-color: var(--foreground);
+	border-radius: 4px;
+	@media (width <= 704px) {
+		border-radius: 0;
+	}
+}
+
+pre {
+	font-size: 0.95rem;
+	padding: 16px 32px;
+
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
+	tab-size: 2;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+code:not(pre *) {
+	font-size: 0.95em;
+	padding: 4px 8px;
+}
+
+img {
+	border-radius: 4px;
+	@media (width <= 704px) {
+		border-radius: 0;
+	}
+}
+
+dl {
+	column-gap: calc(var(--gap) * 2);
+	display: grid;
+	grid-template-columns: auto 1fr;
+}
+
+dt {
+	font-weight: bold;
+	grid-column: 1;
+}
+
+dd {
+	grid-column: 2;
+}
+
+table {
+	border-collapse: collapse;
+	font-size: 0.95em;
+	table-layout: fixed;
+	text-align: center;
+	width: 100%;
+	word-break: normal;
+}
+
+th,
+td {
+	border: 3px solid var(--outline);
+	padding: 8px 0;
+
+	&:first-of-type {
+		border-inline-start: unset;
+	}
+
+	&:last-of-type {
+		border-inline-end: unset;
+	}
+}
+
+th {
+}
+
+thead th {
+	border-block-start: unset;
+}
+
+tfoot th,
+tr:last-of-type td {
+	border-block-end: unset;
+}
+
+caption {
+	font-size: 1rem;
+	margin-block-end: 16px; /* 1rem */
+}

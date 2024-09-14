@@ -1,12 +1,30 @@
 {
 	"name": "www",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Branden Higby's personal site",
 	"author": "Branden Higby",
 	"license": "MIT",
 	"private": true,
 	"type": "module",
-	"scripts": {},
+	"scripts": {
+		"build": "npx @11ty/eleventy",
+		"serve": "npx @11ty/eleventy --serve --watch"
+	},
+	"dependencies": {
+		"@11ty/eleventy": "3.0.0-alpha.20",
+		"@11ty/eleventy-img": "^4.0.2",
+		"@11ty/eleventy-plugin-directory-output": "^1.0.1",
+		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+		"@higby/reset": "^3.0.4",
+		"browserslist": "^4.23.3",
+		"dayjs": "^1.11.13",
+		"html-minifier-terser": "^7.2.0",
+		"lightningcss": "^1.26.0",
+		"markdown-it": "^14.1.0",
+		"markdown-it-attrs": "^4.2.0",
+		"markdown-it-deflist": "^3.0.0",
+		"markdown-it-implicit-figures": "^0.12.0"
+	},
 	"devDependencies": {
 		"@eslint/js": "^9.9.1",
 		"eslint": "^9.9.1",

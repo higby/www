@@ -1,0 +1,87 @@
+.masthead {
+	align-items: center;
+	gap: var(--gap) var(--gutters);
+	display: flex;
+	flex-wrap: wrap;
+	margin-block-end: 32px;
+	margin-inline: auto;
+	width: min(calc(100% - var(--gutters)), var(--site-max-width));
+	padding-block-start: 32px;
+
+	.title {
+		font-size: var(--font-size-2);
+		font-weight: bold;
+	}
+
+	a {
+		color: var(--text-emphasis);
+		text-decoration-line: none;
+		&:hover {
+			color: var(--accent);
+			text-decoration-line: underline;
+		}
+	}
+
+	nav {
+		margin-inline-start: auto;
+
+		ul {
+			display: flex;
+		}
+
+		li:not(:last-of-type) {
+			display: flex;
+			&::after {
+				content: "//";
+				margin-inline: 1ch;
+				opacity: 0.5;
+			}
+		}
+
+		[aria-current="page"] {
+			color: var(--accent);
+		}
+	}
+}
+
+.content {
+	margin-block: 112px 96px;
+	margin-inline: auto;
+	width: min(calc(100% - var(--gutters)), var(--content-max-width));
+}
+
+.sigil {
+	margin-block-start: 32px;
+	padding-block-end: 64px;
+
+	svg {
+		display: block;
+		fill: currentColor;
+		margin-inline: auto;
+	}
+}
+
+.prose,
+.prose > section {
+	> * {
+		margin-block-end: 32px;
+	}
+
+	> header:first-child {
+		margin-block-end: 80px;
+
+		h1 {
+			max-width: 400px;
+		}
+	}
+
+	> h2 {
+		margin-block: 48px 56px;
+	}
+
+	> pre,
+	> figure:has(picture) {
+		margin-inline: -32px;
+		margin-block: 48px;
+	}
+}

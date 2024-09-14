@@ -1,0 +1,24 @@
+---
+permalink: feed.xml
+eleventyExcludeFromCollections: true
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="{{ site.url }}" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>{{ author.name | escape }}</title>
+		<link>{{ site.url }}</link>
+		<atom:link href="{{ permalink | htmlBaseUrl: site.url }}" rel="self" type="application/rss+xml" />
+		<description>{{ site.description }}</description>
+		{%- for post in collections.garden reversed %}
+		{% capture canonical %}{{ post.url | default: post.data.externalURL | htmlBaseUrl: site.url }}{% endcapture %}
+		<item>
+			<title>{{ post.data.title | escape }}</title>
+			<link>{{ canonical }}</link>
+			<guid>{{ canonical }}</guid>
+			<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+			<description>{{ post.content | renderTransforms: "post.data.page", "metadata.base" | escape }}</description>
+		</item>
+		{%- endfor %}
+	</channel>
+</rss>

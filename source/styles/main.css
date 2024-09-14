@@ -1,0 +1,10 @@
+@import "_fonts.css";
+@import "_root.css";
+@import "../../node_modules/@higby/reset/reset.min.css";
+@import "_base.css";
+@import "_layouts.css";
+@import "_components.css";
+
+@view-transition {
+	navigation: auto;
+}
