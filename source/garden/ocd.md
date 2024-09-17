@@ -1,7 +1,6 @@
 ---
 title: "obsessive-compulsive disorder"
 date: 2020-04-22
-permalink: "/ocd/"
 ---
 
 **obsessive-compulsive disorder** _noun._

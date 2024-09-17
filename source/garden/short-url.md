@@ -1,7 +1,6 @@
 ---
 title: "Short URL Service with Jekyll & Netlify"
 date: 2021-05-18
-tags: notes
 ---
 
 ## Original Solution
