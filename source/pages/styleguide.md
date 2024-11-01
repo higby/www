@@ -1,6 +1,5 @@
 ---
 title: "Styleguide"
-permalink: "/styleguide/"
 ---
 
 ## Headings & Sections

@@ -1,4 +1,5 @@
 import dayjs from "dayjs"
+import path from "node:path"
 
 export default (eleventyConfig) => {
 	eleventyConfig.addFilter("encodeURI", (data) => encodeURIComponent(data))
@@ -8,5 +9,11 @@ export default (eleventyConfig) => {
 		const formatToken = format || "MMM DD, YYYY"
 
 		return dayjs(date).format(formatToken)
+	})
+
+	eleventyConfig.addFilter("stripPath", (permalink) => {
+		const directoryIndex = permalink.indexOf(path.sep, 1)
+
+		return `${permalink.slice(directoryIndex)}/`
 	})
 }

@@ -1,5 +1,5 @@
 export default {
 	layout: "post",
 	tags: "garden",
-	permalink: "/{{ page.fileSlug | slugify }}/"
+	permalink: "/{{ page.filePathStem | stripPath }}/"
 }

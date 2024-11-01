@@ -1,3 +1,4 @@
 export default {
-	layout: "page"
+	layout: "page",
+	permalink: "/{{ page.filePathStem | stripPath }}/"
 }
