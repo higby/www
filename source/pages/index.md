@@ -15,15 +15,15 @@ Branden is a programmer who enjoys designing and building for the web. They have
 
 Mastodon
 
-: [Mastodon]({{ author.mastodon }})
+: [{{ author.mastodon }}]({{ author.mastodon }})
 
 GitHub
 
-: [GitHub]({{ author.github }})
+: [higby]({{ author.github }})
 
 Letterboxd
 
-: [Letterboxd]({{ author.letterboxd }})
+: [higby]({{ author.letterboxd }})
 
 Email
 
