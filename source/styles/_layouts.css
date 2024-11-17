@@ -45,8 +45,9 @@
 }
 
 .content {
-	margin-block: 112px 96px;
+	margin-block-end: 96px;
 	margin-inline: auto;
+	padding-block-start: 112px;
 	width: min(calc(100% - var(--gutters)), var(--content-max-width));
 }
 

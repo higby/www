@@ -4,20 +4,33 @@ permalink: "/"
 layout: "home"
 ---
 
+<!--
 <section class="bio">
 
-Howdy, I'm a programmer who enjoys designing and building for the web. I have a keen interest in accessibility and the [IndieWeb](https://indieweb.org/). In my free time I enjoy watching film and television as well as writing.
+Branden is a programmer who enjoys designing and building for the web. They have a keen interest in accessibility and the [IndieWeb](https://indieweb.org/). This [hypertext garden](/garden/) is their personal slice of the internet. It contains essays, notes, and anything they may be tinkering with.
 
-</section>
-
-<section class="garden">
-
-This [hypertext garden](/garden/) is my personal slice of the internet. It contains my essays, notes, and anything I may be currently tinkering with.
-
-</section>
+</section>-->
 
 <section class="elsewhere">
 
-You can find me on [Mastodon]({{ author.mastodon }}), [GitHub]({{ author.github }}), and [Letterboxd]({{ author.letterboxd }}). I can also be reached via email: [{{ author.email}}](mailto:{{ author.email}}) ([pgp](/pgp.txt)).
+Mastodon
+
+: [Mastodon]({{ author.mastodon }})
+
+GitHub
+
+: [GitHub]({{ author.github }})
+
+Letterboxd
+
+: [Letterboxd]({{ author.letterboxd }})
+
+Email
+
+: [{{ author.email}}](mailto:{{ author.email}})
+
+PGP
+
+: [652B 8C7D 91BC 4895](/pgp.txt)
 
 </section>

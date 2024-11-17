@@ -3,11 +3,13 @@ layout: "base"
 styles: "home"
 ---
 
-<article class="prose">
+<main id="main-content" class="content prose">
 	<header>
 		<h1>{{ site.accentedName }}</h1>
 		<p class="epithet">{{ author.epithet }}</p>
 	</header>
 
 	{{ content }}
-</article>
+</main>
+
+{% include "sigil" %}

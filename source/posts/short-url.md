@@ -109,6 +109,8 @@ So I create two new records, one that matches the index and maps it to `/` and o
 
 The wildcard must come last because it then catches everything not already specified by the other records.
 
+{% comment %}
+
 ## Bonuses
 
 ### Repository
@@ -120,3 +122,5 @@ First of all the github repository linked above (and also [here](https://github.
 That header's kinda redundant, huh.
 
 For anyone that might be using [Script Kit](https://github.com/johnlindquist/kit) then you might find some use in this script that automates making a new shortlink: [higby/short-url.js](https://gist.github.com/higby/1c5c226bd6ad5311fd13166fdbeee1eb).
+
+{% endcomment %}

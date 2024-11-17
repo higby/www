@@ -1,6 +1,6 @@
 export default {
 	name: "Branden Higby",
-	epithet: "tinkerer",
+	epithet: "Web Developer",
 	email: "branden@higby.io",
 	github: "https://github.com/higby/",
 	mastodon: "https://front-end.social/@higby",

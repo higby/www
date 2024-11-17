@@ -2,11 +2,17 @@
 layout: "base"
 ---
 
-<article class="prose">
-	<header>
-		<h1>{{ title }}</h1>
-		{% if subtitle %}<p>{{ subtitle }}</p>{% endif %}
-	</header>
+{% include "masthead" %}
 
-	{{ content }}
-</article>
+<main id="main-content" class="content">
+	<article class="prose">
+		<header>
+			<h1>{{ title }}</h1>
+			{% if subtitle %}<p>{{ subtitle }}</p>{% endif %}
+		</header>
+
+		{{ content }}
+	</article>
+</main>
+
+{% include "sigil" %}
