@@ -1,6 +1,7 @@
 :root {
-	--font-sans: "IBM Plex Sans";
-	--font-mono: "IBM Plex Mono";
+	--font-sans: "IBM Plex Sans", system-ui, sans-serif;
+	--font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Code", "Source Code Pro",
+		Menlo, Consolas, "DejaVu Sans Mono", monospace;
 
 	--site-max-width: 1792px; /* 75rem */
 	--content-max-width: 640px; /* 40rem */

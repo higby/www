@@ -32,9 +32,10 @@
 /*
   https://kittygiraudel.com/snippets/sr-only-class/
   https://benmyers.dev/blog/native-visually-hidden/
+	https://benmyers.dev/blog/skip-links/
 */
 
-.visually-hidden {
+[href="#main-content"]:not(:focus) {
 	border: 0;
 	clip: rect(1px, 1px, 1px, 1px);
 	-webkit-clip-path: inset(50%);
@@ -46,4 +47,13 @@
 	position: absolute;
 	width: 1px;
 	white-space: nowrap;
+}
+
+[href="#main-content"] {
+	background-color: var(--background);
+	font-size: var(--font-size-h1);
+	font-weight: 700;
+	inset-block-start: 32px;
+	inset-inline-start: 32px;
+	position: fixed;
 }
