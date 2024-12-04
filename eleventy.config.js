@@ -12,6 +12,10 @@ export default (eleventyConfig) => {
 	eleventyConfig.addPlugin(plugins)
 	eleventyConfig.addPlugin(styles)
 	eleventyConfig.addPlugin(transforms)
+
+	eleventyConfig.addPassthroughCopy({
+		"./node_modules/@zachleat/snow-fall/snow-fall.js": "snow-fall.js"
+	})
 }
 
 export const config = {
