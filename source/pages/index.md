@@ -15,7 +15,7 @@ Branden is a programmer who enjoys designing and building for the web. They have
 
 Mastodon
 
-: [{{ author.mastodon }}]({{ author.mastodon }})
+: [@higby@front-end.social]({{ author.mastodon }})
 
 GitHub
 
