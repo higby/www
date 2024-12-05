@@ -140,6 +140,9 @@ dl {
 	column-gap: calc(var(--gap) * 2);
 	display: grid;
 	grid-template-columns: auto 1fr;
+	@media (max-width: 500px) {
+		display: initial;
+	}
 }
 
 dt {
@@ -149,6 +152,10 @@ dt {
 
 dd {
 	grid-column: 2;
+	margin-block-end: 8px;
+	@media (max-width: 500px) {
+		margin-inline-start: 16px;
+	}
 }
 
 table {
