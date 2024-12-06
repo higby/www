@@ -10,6 +10,10 @@ export default {
 		{
 			title: "garden",
 			href: "/garden/"
+		},
+		{
+			title: "colophon",
+			href: "/colophon/"
 		}
 	]
 }
