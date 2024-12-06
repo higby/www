@@ -1,5 +1,5 @@
 import browserslist from "browserslist"
-import { bundle, browserslistToTargets } from "lightningcss"
+import { bundle, browserslistToTargets, Features } from "lightningcss"
 import path from "path"
 
 const targets = browserslistToTargets(browserslist("> 0.2% and not dead"))
@@ -17,7 +17,8 @@ export default (eleventyConfig) => {
 				bundle({
 					filename: inputPath,
 					minify: true,
-					targets
+					targets,
+					include: Features.Nesting
 				}).code
 		},
 		compileOptions: {
