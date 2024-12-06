@@ -1,13 +1,13 @@
 :root {
-	--accent: #6e47ec;
-	--ink: #000;
-	--background: #fafafa;
+	--accent: oklch(54.24% 0.2326 286.66);
+	--ink: oklch(0% 0 0);
+	--background: oklch(98.51% 0 0);
 
-	--foreground: color-mix(in srgb, var(--background), var(--ink) 6%);
-	--outline: color-mix(in srgb, var(--background), var(--ink) 15%);
-	--text-emphasis: color-mix(in srgb, var(--background), var(--ink) 80%);
-	--text: color-mix(in srgb, var(--background), var(--ink) 65%);
-	--text-subtle: color-mix(in srgb, var(--background), var(--ink) 55%);
+	--foreground: color-mix(in oklch, var(--background), var(--ink) 6%);
+	--outline: color-mix(in oklch, var(--background), var(--ink) 15%);
+	--text-emphasis: color-mix(in oklch, var(--background), var(--ink) 80%);
+	--text: color-mix(in oklch, var(--background), var(--ink) 65%);
+	--text-subtle: color-mix(in oklch, var(--background), var(--ink) 55%);
 
 	--font-family-sans: "IBM Plex Sans", system-ui, sans-serif;
 	--font-family-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
@@ -25,8 +25,8 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--accent: #ec4672;
-		--ink: #f8fafc;
-		--background: #15181d;
+		--accent: oklch(64.25% 0.2028 9.32);
+		--ink: oklch(98.42% 0.0034 247.86);
+		--background: oklch(20.81% 0.011 260.67);
 	}
 }
