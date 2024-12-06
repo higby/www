@@ -22,6 +22,7 @@
 		"html-minifier-terser": "^7.2.0",
 		"lightningcss": "^1.26.0",
 		"markdown-it": "^14.1.0",
+		"markdown-it-attribution": "^0.1.4",
 		"markdown-it-attrs": "^4.2.0",
 		"markdown-it-deflist": "^3.0.0",
 		"markdown-it-implicit-figures": "^0.12.0"

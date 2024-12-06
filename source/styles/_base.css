@@ -28,43 +28,56 @@ h3 {
 }
 
 blockquote {
-	display: grid;
-	gap: 16px;
-	grid-template-columns: auto 1fr;
-	margin-inline: unset;
-
-	> * {
-		grid-column: 2 / 3;
+	> *:not(:last-child) {
+		margin-block-end: 8px;
 	}
 
-	&::before {
-		content: open-quote;
-		font-size: 2em;
-		line-height: 1.25;
-	}
-
-	&::after {
-		content: close-quote;
-		opacity: 0;
-		position: absolute;
+	&:not(figure *) {
+		border-inline-start: 3px solid var(--text-subtle);
+		padding-inline-start: 16px;
 	}
 }
 
-figure:has(> blockquote) {
-	grid-template-areas:
-		"punctuation quote"
-		"punctuation attribution";
+figure {
+	&:has(> blockquote) {
+		display: grid;
+		gap: 8px 24px;
+		grid-template-areas:
+			"before blockquote"
+			"before figcaption";
+		grid-template-columns: auto 1fr;
 
-	&::before {
-		grid-area: punctuation;
+		&::before {
+			content: open-quote;
+			font-size: 2.25em;
+			grid-area: before;
+			line-height: 1.25;
+		}
+
+		&::after {
+			content: close-quote;
+			opacity: 0;
+			position: absolute;
+		}
+
+		blockquote {
+			grid-area: blockquote;
+		}
+
+		figcaption {
+			grid-area: figcaption;
+			justify-self: end;
+		}
 	}
 
-	blockquote {
-		grid-area: quote;
-	}
+	&:has(> picture) {
+		img {
+			border-radius: var(--border-radius);
 
-	figcaption {
-		grid-area: attribution;
+			@media (width <= 704px) {
+				border-radius: 0;
+			}
+		}
 	}
 }
 
@@ -106,14 +119,6 @@ pre {
 code:not(pre *) {
 	font-size: var(--font-size-code);
 	padding: 4px 8px;
-}
-
-img {
-	border-radius: var(--border-radius);
-
-	@media (width <= 704px) {
-		border-radius: 0;
-	}
 }
 
 dl {

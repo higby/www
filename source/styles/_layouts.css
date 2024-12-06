@@ -21,17 +21,18 @@
 
 .prose {
 	> * {
+		margin-block-end: 24px;
 		margin-inline: auto;
 		width: min(640px, calc(100% - 64px));
-
-		&:not(:last-child) {
-			margin-block-end: 24px;
-		}
 	}
 
 	> header:first-child {
 		margin-block-end: 112px;
 		padding-block-start: 112px;
+
+		h1 {
+			max-width: 400px;
+		}
 	}
 
 	> h2:not([role="presentation"]) {
@@ -42,7 +43,11 @@
 		margin-block-start: 40px;
 	}
 
-	> :is(figure, pre, table) {
+	> :is(figure:has(> picture), pre, table) {
 		width: min(calc(640px + 64px), 100%);
+	}
+
+	> figure {
+		margin-block: 40px;
 	}
 }
