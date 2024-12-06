@@ -4,21 +4,9 @@ title: "Styleguide"
 
 ## Headings & Sections
 
-<p 
-	role="presentation" 
-	style="font-size: var(--font-size-1); font-weight:bold">
-	Heading 1 with <a href="/#">a link</a> &amp; <code>&lt;code&gt;</code>
-</p>
-<p 
-	role="presentation" 
-	style="font-size: var(--font-size-2); font-weight:bold">
-	Heading 2 with <a href="/#">a link</a> &amp; <code>&lt;code&gt;</code>
-</p>
-<p 
-	role="presentation" 
-	style="font-size: var(--font-size-3); font-weight:bold">
-	Heading 3 with <a href="/#">a link</a> &amp; <code>&lt;code&gt;</code>
-</p>
+<h1 role="presentation">Heading 1 with <a href="/#">a link</a> &amp; <code>&lt;code&gt;</code></h1>
+<h2 role="presentation">Heading 2 with <a href="/#">a link</a> &amp; <code>&lt;code&gt;</code></h2>
+<h3 role="presentation">Heading 3 with <a href="/#">a link</a> &amp; <code>&lt;code&gt;</code></h3>
 
 ## Block Elements
 

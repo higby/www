@@ -1,88 +1,48 @@
 .masthead {
-	align-items: center;
-	gap: var(--gap) var(--gutters);
 	display: flex;
+	justify-content: space-between;
 	margin-block-end: 32px;
 	margin-inline: auto;
-	width: min(calc(100% - var(--gutters)), var(--site-max-width));
 	padding-block-start: 32px;
+	width: min(1792px, calc(100% - 64px));
 
-	.title {
-		color: var(--accent);
-		font-size: var(--font-size-2);
-		font-weight: bold;
+	nav ul {
+		display: flex;
+		gap: 24px;
 	}
-
-	a {
-		color: var(--text-emphasis);
-		text-decoration-line: none;
-		&:hover {
-			color: var(--accent);
-			text-decoration-line: underline;
-		}
-	}
-
-	nav {
-		margin-inline-start: auto;
-
-		ul {
-			display: flex;
-		}
-
-		li:not(:last-of-type) {
-			display: flex;
-			&::after {
-				content: "//";
-				margin-inline: 1ch;
-				opacity: 0.5;
-			}
-		}
-
-		[aria-current="page"] {
-			color: var(--accent);
-		}
-	}
-}
-
-.content {
-	margin-block-end: 96px;
-	margin-inline: auto;
-	padding-block-start: 112px;
-	width: min(calc(100% - var(--gutters)), var(--content-max-width));
 }
 
 .sigil {
-	margin-block-start: 32px;
-	padding-block-end: 64px;
-
-	svg {
-		display: block;
-		fill: currentColor;
-		margin-inline: auto;
-	}
+	display: grid;
+	margin-block-end: 96px;
+	padding-block-start: 96px;
+	place-items: center;
 }
 
-.prose,
-.prose > section {
+.prose {
 	> * {
-		margin-block-end: 32px;
-	}
+		margin-inline: auto;
+		width: min(640px, calc(100% - 64px));
 
-	> header:first-child {
-		margin-block-end: 80px;
-
-		h1 {
-			max-width: 400px;
+		&:not(:last-child) {
+			margin-block-end: 24px;
 		}
 	}
 
-	> h2 {
-		margin-block: 48px 56px;
+	> header:first-child {
+		margin-block-end: 112px;
+		padding-block-start: 112px;
 	}
 
-	> pre,
-	> figure:has(picture) {
-		margin-inline: -32px;
-		margin-block: 48px;
+	> h2:not([role="presentation"]) {
+		margin-block-start: 80px;
+	}
+
+	> h3:not([role="presentation"]) {
+		margin-block-start: 40px;
+	}
+
+	> :is(figure, pre, table) {
+		width: min(calc(640px + 64px), 100%);
 	}
 }

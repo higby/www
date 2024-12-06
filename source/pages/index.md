@@ -1,5 +1,6 @@
 ---
 title: "Branden Higby"
+description: "Branden Higby"
 permalink: "/"
 layout: "home"
 ---

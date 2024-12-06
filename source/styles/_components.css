@@ -1,41 +1,10 @@
-.accent {
-	color: var(--accent);
-	font-style: inherit;
-}
-
-.epithet {
-	font-size: var(--font-size-3);
-}
-
-.lattice {
-	display: grid;
-	gap: 8px 24px;
-	grid-template-columns: auto 1fr;
-
-	@media (width <= 35rem) {
-		display: flex;
-		flex-direction: column;
-		gap: calc(var(--gap) * 2);
-	}
-
-	li {
-		display: grid;
-		grid-column: span 2;
-		grid-template-columns: subgrid;
-	}
-
-	a {
-		width: fit-content;
-	}
-}
-
 /*
   https://kittygiraudel.com/snippets/sr-only-class/
   https://benmyers.dev/blog/native-visually-hidden/
 	https://benmyers.dev/blog/skip-links/
 */
 
-[href="#main-content"]:not(:focus) {
+.skip-link:not(:focus) {
 	border: 0;
 	clip: rect(1px, 1px, 1px, 1px);
 	-webkit-clip-path: inset(50%);
@@ -49,11 +18,29 @@
 	white-space: nowrap;
 }
 
-[href="#main-content"] {
+.skip-link {
 	background-color: var(--background);
 	font-size: var(--font-size-h1);
 	font-weight: 700;
 	inset-block-start: 32px;
 	inset-inline-start: 32px;
 	position: fixed;
+}
+
+.accent {
+	color: var(--accent);
+	font-style: inherit;
+}
+
+.lattice {
+	li {
+		column-gap: 16px;
+		display: flex;
+		flex-wrap: wrap;
+		margin-block-end: 4px;
+	}
+
+	time {
+		color: var(--text-subtle);
+	}
 }

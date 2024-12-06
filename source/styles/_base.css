@@ -3,40 +3,28 @@ html {
 }
 
 body {
-	background-color: var(--background);
 	color: var(--text);
-	font-family: var(--font-sans);
+	font-family: var(--font-family-sans);
 	letter-spacing: 0.02em;
 	line-height: 1.65;
 }
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
 	color: var(--text-emphasis);
 }
 
 h1 {
-	font-size: var(--font-size-1);
+	font-size: var(--font-size-h1);
 }
 
 h2 {
-	font-size: var(--font-size-2);
+	font-size: var(--font-size-h2);
 }
 
-h3,
-h4,
-h5,
-h6 {
-	font-size: var(--font-size-3);
-}
-
-ol,
-ul {
-	padding-inline-start: 40px;
+h3 {
+	font-size: var(--font-size-h3);
 }
 
 blockquote {
@@ -80,16 +68,11 @@ figure:has(> blockquote) {
 	}
 }
 
-cite {
-	font-style: normal;
-}
-
 a {
 	color: var(--accent);
 	text-decoration-line: underline;
 	text-decoration-thickness: 0.1em;
 	text-underline-offset: 2px;
-	transition: color 0.15s;
 
 	&:hover {
 		text-decoration-line: none;
@@ -98,48 +81,46 @@ a {
 
 pre,
 code {
-	font-family: var(--font-mono);
+	font-family: var(--font-family-mono);
 }
 
 pre,
 code:not(pre *) {
 	background-color: var(--foreground);
-	border-radius: 4px;
+	border-radius: var(--border-radius);
+}
+
+pre {
+	background-color: var(--foreground);
+	font-size: var(--font-size-pre);
+	padding: 16px 32px;
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
+	tab-size: 2;
+
 	@media (width <= 704px) {
 		border-radius: 0;
 	}
 }
 
-pre {
-	font-size: 0.95rem;
-	padding: 16px 32px;
-
-	-moz-tab-size: 2;
-	-o-tab-size: 2;
-	tab-size: 2;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-}
-
 code:not(pre *) {
-	font-size: 0.95em;
+	font-size: var(--font-size-code);
 	padding: 4px 8px;
 }
 
 img {
-	border-radius: 4px;
+	border-radius: var(--border-radius);
+
 	@media (width <= 704px) {
 		border-radius: 0;
 	}
 }
 
 dl {
-	column-gap: calc(var(--gap) * 2);
+	column-gap: 32px;
 	display: grid;
 	grid-template-columns: auto 1fr;
+
 	@media (max-width: 500px) {
 		display: initial;
 	}
@@ -153,6 +134,7 @@ dt {
 dd {
 	grid-column: 2;
 	margin-block-end: 8px;
+
 	@media (max-width: 500px) {
 		margin-inline-start: 16px;
 	}
@@ -160,10 +142,9 @@ dd {
 
 table {
 	border-collapse: collapse;
-	font-size: 0.95em;
 	table-layout: fixed;
 	text-align: center;
-	width: 100%;
+	width: fit-content;
 	word-break: normal;
 }
 
@@ -181,9 +162,6 @@ td {
 	}
 }
 
-th {
-}
-
 thead th {
 	border-block-start: unset;
 }
@@ -194,6 +172,5 @@ tr:last-of-type td {
 }
 
 caption {
-	font-size: 1rem;
-	margin-block-end: 16px; /* 1rem */
+	margin-block-end: 16px;
 }

@@ -1,12 +1,11 @@
 <header class="masthead">
-	<a href="/" class="title">{{ site.title }}</a>
+	<a href="/" class="title">higby</a>
 	
 	<nav>
 		<ul role="list">
 			{% for item in site.navigation %}
-			{% capture navURL %}/{{ item }}/{% endcapture %}
 			<li>
-				<a href="{{ navURL }}" {% if page.url == navURL %} aria-current="page"{% endif %}>{{ item }}</a>
+				<a href="{{ item.href }}" {% if page.url == item.href %} aria-current="page"{% endif %}>{{ item.title }}</a>
 			</li>
 			{% endfor %}
 		</ul>
