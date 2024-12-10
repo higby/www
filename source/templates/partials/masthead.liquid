@@ -1,13 +1,5 @@
 <header class="masthead">
 	<a href="/" class="title">higby</a>
 	
-	<nav>
-		<ul role="list">
-			{% for item in site.navigation %}
-			<li>
-				<a href="{{ item.href }}" {% if page.url == item.href %} aria-current="page"{% endif %}>{{ item.title }}</a>
-			</li>
-			{% endfor %}
-		</ul>
-	</nav>
+	{% include "navigation" %}
 </header>
