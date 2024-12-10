@@ -5,14 +5,13 @@ permalink: "/"
 layout: "base"
 ---
 
-<main id="main-content" class="prose" tabindex="-1">
+<main id="main-content" class="home" tabindex="-1">
 	<header>
 		<h1>Branden <i class="accent">Higby</i></h1>
-		<p>{{ author.epithet }}</p>
 	</header>
 
-    {% include "navigation" %}
+	{% include "navigation" %}
 
+	<footer class="sigil">{% include "icons/sigil.svg" %}</footer>
 </main>
 
-{% include "sigil" %}

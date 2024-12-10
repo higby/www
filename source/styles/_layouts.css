@@ -12,6 +12,7 @@
 	font-size: var(--font-size-h2);
 	font-weight: bold;
 	text-decoration-line: none;
+
 	&:hover {
 		color: var(--accent);
 		text-decoration-line: underline;
@@ -48,11 +49,27 @@
 	}
 }
 
+.footer {
+	margin-block-start: 96px;
+	padding-block-end: 96px;
+}
+
 .sigil {
 	display: grid;
-	margin-block-end: 96px;
-	padding-block-start: 96px;
 	place-items: center;
+}
+
+.home {
+	align-content: center;
+	display: grid;
+	grid-template-rows: repeat(3, min-content);
+	width: min-content;
+	margin-inline: auto;
+	min-block-size: 100vh;
+
+	nav {
+		margin-block: 2px 24px;
+	}
 }
 
 .prose {
