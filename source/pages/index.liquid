@@ -10,7 +10,17 @@ layout: "base"
 		<h1>Branden <i class="accent">Higby</i></h1>
 	</header>
 
-	{% include "navigation" %}
+	<ul class="dashed-list" role="list">
+		<li>
+			<a href="/garden/" >garden</a>
+		</li>
+		<li>
+			<a href="{{ author.github }}">github</a>
+		</li>
+		<li>
+			<a href="{{ author.mastodon }}">mastodon</a>
+		</li>
+	</ul>
 
 	<footer class="sigil">{% include "icons/sigil.svg" %}</footer>
 </main>

@@ -19,36 +19,6 @@
 	}
 }
 
-.site-nav {
-	ul {
-		display: flex;
-	}
-
-	li:not(:last-of-type) {
-		display: flex;
-
-		&::after {
-			content: "//";
-			margin-inline: 1ch;
-			opacity: 0.5;
-		}
-	}
-
-	a {
-		color: var(--text-emphasis);
-		text-decoration-line: none;
-
-		&[aria-current="page"] {
-			color: var(--accent);
-		}
-
-		&:hover {
-			color: var(--accent);
-			text-decoration-line: underline;
-		}
-	}
-}
-
 .footer {
 	margin-block-start: 96px;
 	padding-block-end: 96px;
@@ -67,8 +37,12 @@
 	margin-inline: auto;
 	min-block-size: 100vh;
 
-	nav {
-		margin-block: 2px 24px;
+	h1 {
+		margin-block-end: 4px;
+	}
+
+	svg {
+		margin-block-start: 24px;
 	}
 }
 

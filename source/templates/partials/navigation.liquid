@@ -1,5 +1,5 @@
-<nav class="site-nav">
-	<ul role="list">
+<nav>
+	<ul class="dashed-list" role="list">
 		{% for item in site.navigation %}
 		<li>
 			<a href="{{ item.href }}" {% if page.url == item.href %} aria-current="page"{% endif %}>{{ item.title }}</a>
