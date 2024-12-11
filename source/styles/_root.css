@@ -21,6 +21,7 @@
 	--font-size-code: 0.89em;
 
 	--border-radius: 6px;
+	--gutters: 32px;
 }
 
 @media (prefers-color-scheme: dark) {

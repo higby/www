@@ -4,7 +4,7 @@
 	margin-block-end: 32px;
 	margin-inline: auto;
 	padding-block-start: 32px;
-	width: min(1792px, calc(100% - 64px));
+	width: min(1792px, calc(100% - var(--gutters)));
 }
 
 .title {
@@ -50,7 +50,7 @@
 	> * {
 		margin-block-end: 24px;
 		margin-inline: auto;
-		width: min(640px, calc(100% - 64px));
+		width: min(640px, calc(100% - var(--gutters)));
 	}
 
 	> header:first-child {
@@ -70,7 +70,7 @@
 		margin-block-start: 40px;
 	}
 
-	> :is(figure:has(> picture), pre, table) {
+	> :is(figure:has(> picture), pre) {
 		width: min(calc(640px + 64px), 100%);
 	}
 
