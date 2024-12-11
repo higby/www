@@ -1,5 +1,5 @@
 export default {
-	description: "Branden Higby’s Hypertext Garden",
+	description: "hypertext garden",
 	url: "https://www.higby.io",
 	timestamp: new Date(),
 	navigation: [
