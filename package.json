@@ -15,7 +15,7 @@
 		"@11ty/eleventy-img": "^4.0.2",
 		"@11ty/eleventy-plugin-directory-output": "^1.0.1",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-		"@higby/reset": "^3.1.0",
+		"@higby/reset": "^3.1.1",
 		"@zachleat/snow-fall": "^1.0.2",
 		"browserslist": "^4.23.3",
 		"dayjs": "^1.11.13",
