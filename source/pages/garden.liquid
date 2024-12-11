@@ -6,8 +6,8 @@ subtitle: "<a href='/feed.xml'>rss</a>"
 <ol class="lattice" role="list">
 	{% for item in collections.garden reversed %}
 	<li>
-		<time>{{ item.date | formatDate: "YYYY-MM-DD" }}</time>
 		<a href="{{ item.url | default: item.data.externalURL }}">{{ item.data.title }}</a>
+		<time>{{ item.date | formatDate: "YYYY-MM-DD" }}</time>
 	</li>
 	{% endfor %}
 </ol>

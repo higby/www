@@ -62,10 +62,10 @@
 
 .lattice {
 	li {
-		column-gap: 16px;
+		row-gap: 2px;
 		display: flex;
-		flex-wrap: wrap;
-		margin-block-end: 4px;
+		flex-direction: column;
+		margin-block-end: 16px;
 	}
 
 	time {

@@ -89,6 +89,7 @@ a {
 	text-decoration-thickness: 0.1em;
 	text-underline-offset: 2px;
 	transition: color 0.2s;
+	width: fit-content;
 
 	&:hover {
 		text-decoration-line: none;
