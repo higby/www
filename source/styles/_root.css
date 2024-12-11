@@ -20,6 +20,8 @@
 	--font-size-pre: 0.89rem;
 	--font-size-code: 0.89em;
 
+	--site-max-width: 1200px;
+	--prose-max-width: 640px;
 	--border-radius: 6px;
 	--gutters: 32px;
 }

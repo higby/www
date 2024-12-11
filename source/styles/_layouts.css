@@ -5,7 +5,7 @@
 	margin-block-end: 32px;
 	margin-inline: auto;
 	padding-block-start: 32px;
-	width: min(1792px, calc(100% - var(--gutters)));
+	width: min(var(--site-max-width), calc(100% - var(--gutters)));
 }
 
 .title {
@@ -51,7 +51,7 @@
 	> * {
 		margin-block-end: 24px;
 		margin-inline: auto;
-		width: min(640px, calc(100% - var(--gutters)));
+		width: min(var(--prose-max-width), calc(100% - var(--gutters)));
 	}
 
 	> header:first-child {
@@ -72,7 +72,7 @@
 	}
 
 	> :is(figure:has(> picture), pre) {
-		width: min(calc(640px + 64px), 100%);
+		width: min(calc(var(--prose-max-width) + 64px), 100%);
 	}
 
 	> figure {
