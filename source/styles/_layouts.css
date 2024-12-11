@@ -61,6 +61,10 @@
 		h1 {
 			max-width: 400px;
 		}
+
+		time {
+			color: var(--text-subtle);
+		}
 	}
 
 	> h2:not([role="presentation"]) {
