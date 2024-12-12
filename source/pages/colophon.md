@@ -17,4 +17,7 @@ Content
 
 Fonts
 : IBM Plex Sans
-: IBM Plex Mono
+: ui-monospace
+
+Snow
+: [\<snow-fall\> Web Component](https://www.zachleat.com/web/snow-fall/)
