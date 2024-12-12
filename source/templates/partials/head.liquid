@@ -6,7 +6,7 @@
 {%- for item in styles %}<link rel="stylesheet" href="/{{ item }}.css">{% endfor %}
 <link rel="preload" href="/fonts/IBM-Plex-Sans.woff2" as="font" type="font/woff2" crossorigin="">
 
-{% if noindex %}<meta name="robots" content="noindex">{% endif %}
+<meta name="robots" content="noindex">
 
 <meta name="description" content="{{ description | default: site.description }}">
 <meta name='author' content='{{ author.name }}'>
