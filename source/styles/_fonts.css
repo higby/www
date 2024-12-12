@@ -3,10 +3,10 @@
 @font-face {
 	font-family: "IBM Plex Sans";
 	font-style: normal;
-	font-weight: 100 900;
+	font-weight: 100 700;
 	font-display: swap;
-	src: url("fonts/IBMPlexSansVar.woff2") format("woff2");
-	unicode-range: U+20-7E;
+	src: url("fonts/IBM-Plex-Sans.woff2") format("woff2");
+	unicode-range: U+20-7E, U+2018, U+2019, U+201C, U+201D;
 }
 
 /* IBM Plex Mono */
