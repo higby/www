@@ -24,7 +24,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim conva
 
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-> I am brave, strong, loyal, and give great hugs. And I am going to be the best friend that _I CAN BE_!
+> I am brave, strong, loyal, and give great hugs. And I am going to be the best friend that _I CAN BE!_
 > — Scorpia, to herself in episode <cite><a href="https://she-raandtheprincessesofpower.fandom.com/wiki/Scorpia">Princess Scorpia</a></cite>
 
 Vitae tortor condimentum lacinia quis vel eros. Fames ac turpis egestas maecenas pharetra convallis posuere morbi. Morbi leo urna molestie at elementum. Lacus sed turpis tincidunt id aliquet risus feugiat in.
