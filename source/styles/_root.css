@@ -23,7 +23,7 @@
 	--site-max-width: 1200px;
 	--prose-max-width: 640px;
 	--border-radius: 6px;
-	--gutters: 32px;
+	--gutters: 64px;
 }
 
 @media (prefers-color-scheme: dark) {
