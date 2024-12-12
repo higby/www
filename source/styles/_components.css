@@ -65,7 +65,7 @@
 	li {
 		display: flex;
 		flex-direction: column;
-		margin-block-end: 16px;
+		margin-block-end: 8px;
 
 		@media (width >= 550px) {
 			align-items: center;
