@@ -1,6 +1,5 @@
 ---
 title: "colophon"
-subtitle: "<a href='/styleguide/'>styleguide</a>"
 ---
 
 Code Hosting
