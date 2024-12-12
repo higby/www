@@ -48,6 +48,7 @@
 	a {
 		color: var(--text-emphasis);
 		text-decoration-line: none;
+		transition: color 0.2s;
 
 		&[aria-current="page"] {
 			color: var(--accent);
