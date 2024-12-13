@@ -14,9 +14,8 @@ Generator
 Content
 : Markdown
 
-Fonts
+Font
 : IBM Plex Sans
-: ui-monospace
 
 Snow
 : [\<snow-fall\> Web Component](https://www.zachleat.com/web/snow-fall/)
