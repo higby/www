@@ -4,10 +4,6 @@ export default {
 	timestamp: new Date(),
 	navigation: [
 		{
-			title: "garden",
-			href: "/garden/"
-		},
-		{
 			title: "colophon",
 			href: "/colophon/"
 		}
